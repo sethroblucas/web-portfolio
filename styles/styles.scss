@@ -7,6 +7,9 @@ $gradient: linear-gradient(left, #ffe400, #ff652f);
 $background-color: #ffe400;
 $white: #ffffff;
 $black: #272727;
+$green: #14a76c;
+$orange: #ff652f;
+$yellow: #ffe400;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
