@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #272727;
 }
 
@@ -149,8 +149,8 @@ nav ul {
 }
 
 .intro h3 {
-  font-size: 6rem;
-  padding: 2rem 0rem;
+  font-size: 5.1rem;
+  padding: 1rem 0rem;
   color: #ffffff;
 }
 
@@ -176,8 +176,8 @@ nav ul {
 }
 
 .active {
-  background: #ffffff;
-  color: #272727;
+  background: #14a76c;
+  color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 2rem;
 }
@@ -313,8 +313,9 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -322,6 +323,7 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 1rem;
 }
 
 footer h4 {

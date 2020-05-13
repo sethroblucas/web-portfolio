@@ -6,7 +6,8 @@ footer {
   @include flex(flex-start, center, row);
   ul {
     flex: 1 1 40rem;
-    @include flex(space-around, center, row);
+    @include flex(flex-start, center, row);
+    font-size: 1rem;
   }
   h4 {
     flex: 1 1 40rem;
