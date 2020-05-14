@@ -6,58 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Seth Lucas is a front end web developer who specializes in html, css"
+      content="Seth Lucas is a informatics graduate and front end developer who specializes in HTML5, CC3, and JavaScript."
     />
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap"
       rel="stylesheet"
     />
-    <title>Seth Lucas | Web Developer</title>
+    <title>Seth Lucas | Informatics Grad</title>
   </head>
   <body>
     <header class="main-head">
       <nav>
         <div class="logo">
-          <img src="../icons/code.svg" alt="logo" />
+          <img src="../icons/dev.png" alt="logo" />
           <h1>Seth Lucas</h1>
         </div>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../projects/index.html">Projects</a></li>
-          <li><a class="active" href="./index.html">Contact</a></li>
+          <li><a href="">Resume</a></li>
+          <li>
+            <a href="../projects/index.html">Projects</a>
+          </li>
+          <li><a class="active" href="../contact/index.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <section class="form-section">
-      <form>
+      <form method="POST" name="contact-email" action="./email.php"">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required />
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required />
-        <label for="message">message</label>
+        <label for="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
         <button type="submit">Submit</button>
       </form>
     </section>
     <footer>
-      <h4>Dev Ed &copy; 2019</h4>
+      <h4>Seth Lucas &copy; 2020</h4>
       <ul>
         <li>
-          <a href="#"
-            ><img src="../icons/twitter 1.svg" alt="twitter-social"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="../icons/instagram 1.svg" alt="insta-social"
-          /></a>
-        </li>
-        <li>
-          <a href="#"
-            ><img src="../icons/youtube-symbol 1.svg" alt="youtube-social"
-          /></a>
+          <p>Let's work together! - sethroblucas@gmail.com</p>
         </li>
       </ul>
     </footer>
