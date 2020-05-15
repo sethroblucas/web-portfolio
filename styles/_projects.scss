@@ -25,6 +25,7 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
 
   &:before {
     content: "";
@@ -120,4 +121,14 @@
     outline: 1px dashed yellow;
     outline-offset: 3px;
   }
+}
+
+.btn a {
+  font-size: $card-text;
+}
+
+#SWP {
+  background-image: url(../img/garden-box.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
