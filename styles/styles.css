@@ -189,6 +189,37 @@ nav ul {
           flex: 1 1 40rem;
 }
 
+#color-change {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes bgcolor {
+  0% {
+    fill: #14a76c;
+  }
+  50% {
+    fill: #ff652f;
+  }
+  100% {
+    fill: #ffe400;
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    fill: #14a76c;
+  }
+  50% {
+    fill: #ff652f;
+  }
+  100% {
+    fill: #ffe400;
+  }
+}
+
 .projects {
   width: 90%;
   margin: auto;
@@ -322,7 +353,6 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: 1rem;
 }
 
 footer h4 {

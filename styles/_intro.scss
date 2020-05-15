@@ -73,3 +73,22 @@ nav {
 .intro-images {
   flex: 1 1 40rem;
 }
+
+#color-change {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@keyframes bgcolor {
+  0% {
+    fill: $green;
+  }
+  50% {
+    fill: $orange;
+  }
+  100% {
+    fill: $yellow;
+  }
+}
