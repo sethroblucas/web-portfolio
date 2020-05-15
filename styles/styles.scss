@@ -3,6 +3,7 @@ $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
 $text: 2.5rem;
+$card-text: 1.5rem;
 $gradient: linear-gradient(left, #ffe400, #ff652f);
 $background-color: #ffe400;
 $white: #ffffff;
@@ -84,5 +85,58 @@ $yellow: #ffe400;
   form {
     padding: 0rem;
     width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+  }
+
+  .card:hover,
+  .card:focus-within {
+    align-items: center;
+
+    &:before {
+      transform: translateY(-4%);
+    }
+    &:after {
+      transform: translateY(-50%);
+    }
+
+    .content {
+      transform: translateY(0);
+
+      > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+      }
+    }
+  }
+
+  .card:focus-within {
+    &:before,
+    &:after,
+    .content,
+    .content > *:not(.title) {
+      transition-duration: 0s;
+    }
   }
 }
