@@ -359,6 +359,12 @@ nav ul {
   background-size: cover;
 }
 
+#PIT {
+  background-image: url(../img/PIT-Logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .form-section {
   min-height: 80vh;
   display: -webkit-box;
