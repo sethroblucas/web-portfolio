@@ -25,6 +25,18 @@ $yellow: #ffe400;
 @import "contact";
 @import "footer";
 
+@media screen and (min-width: 2250px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 1333px) and (max-width: 1750px) {
+  svg {
+    width: 85%;
+  }
+}
+
 @media screen and (max-width: 1332px) {
   html {
     font-size: 53%;
